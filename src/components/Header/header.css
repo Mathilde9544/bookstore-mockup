@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  box-shadow: 3px 3px 3px rgba(221, 216, 216, 0.245);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  width: 235px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 63px;
+  height: 33px;
+  border-radius: 18px;
+  background-color: rgb(37, 106, 237);
+}
+
+.line1 {
+  height:20px;
+  width: 5.5px;
+  background-color: white;
+  border-radius: 5px;
+  transform: rotate(15deg);
+}
+
+.line2 {
+  height:20px;
+  width: 5.5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-size: 25px;
+}

@@ -1,0 +1,17 @@
+.user {
+  color: rgb(37, 106, 237);
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.presentation-text {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.presales {
+  display: flex;
+}
