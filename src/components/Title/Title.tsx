@@ -10,8 +10,8 @@ const Title: React.FC = () => {
         <p className="presentation-text">Enjoy Books of all kinds!</p>
       </div>
       <div className="presales">
-        <p className="sales">Now on Pre-sales</p>
-        <p className="more">See more</p>
+        <h4 className="sales">Now on Pre-sales</h4>
+        <h5 className="more">See more</h5>
       </div>
     </div>
   );

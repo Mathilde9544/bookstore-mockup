@@ -14,4 +14,23 @@ h2 {
 
 .presales {
   display: flex;
+  align-items: flex-end;
+  margin: 50px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.sales, .more {
+  margin: 0px;
+}
+
+.sales {
+  font-size: 18px;
+}
+
+.more {
+  color: rgb(37, 106, 237);
+  font-weight: 700;
+  margin-bottom: 0.5px;
 }

@@ -1,0 +1,76 @@
+.book-card {
+  border: 1px solid rgba(230, 217, 217, 0.449);
+  margin-inline: 8vw;
+  padding: 20px;
+  padding-top: 25px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px rgba(229, 223, 223, 0.14);
+}
+
+.book-image {
+  height: 228px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-top: 1px solid rgba(232, 212, 212, 0.807);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author {
+  display: flex;
+  gap: 15px;
+}
+
+.book-title, .book-author {
+  margin: 0px;
+  text-align: left;
+}
+
+.book-author {
+  color:rgb(82, 87, 93);
+}
+
+.title-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px
+}
+
+.description {
+  text-align: left;
+  font-size: 11px;
+}
+
+.publication-target {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.publication-target p {
+  font-size: 9px;
+  margin:0px;
+}
+
+.target {
+  position: relative;
+  width: 250px;
+  height: 10px;
+  background-color: #e0e0e0;
+  margin-top: 5px;
+}
+
+.target-line {
+  position: absolute;
+  height: 100%;
+  background-color: #4caf50; /* Green color for progress */
+}
