@@ -1,0 +1,36 @@
+.footer {
+  height: 100px;
+  background-color: rgba(225, 221, 221, 0.519);
+  margin-top:50px;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.payment-methods {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  margin-inline: 20px;
+}
+
+.payment-img {
+  width: 60px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+#paypal {
+  background-color: #accee3;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+#stripe {
+  background-color: white;
+}

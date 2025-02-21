@@ -47,7 +47,7 @@ const Book:React.FC<BookProps> = ({ title, author, description, image, avatar, t
       </div>
       <div className="book-card-footer">
         <h5 className={messageClass}>{message}</h5>
-        <button className="preorder-btn">Preorder</button>
+        <button className="preorder-btn">PREORDER</button>
       </div>
     </div>
   );

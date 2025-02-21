@@ -1,11 +1,16 @@
 .book-card {
   border: 1px solid rgba(230, 217, 217, 0.449);
   margin-inline: 8vw;
+  margin-bottom: 25px;
   padding: 20px;
   padding-top: 25px;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
   box-shadow: 3px 3px rgba(229, 223, 223, 0.14);
+}
+
+.book-card:hover {
+  border: 2px solid rgb(37, 106, 237);
 }
 
 .book-image {
@@ -107,6 +112,12 @@ hr {
 }
 
 .preorder-btn {
-  width: 172px;
+  width: 85%;
   height: 42px;
+  background-color: rgb(37, 106, 237);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
 }
