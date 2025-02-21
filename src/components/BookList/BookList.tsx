@@ -133,6 +133,7 @@ const BookList: React.FC = () => {
           avatar={book.author.avatar}
           target={book.project.goal}
           sales={book.sales}
+          endAt={book.project.end_at?.date ||  ""}
         />
       ))}
     </div>

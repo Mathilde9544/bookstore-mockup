@@ -9,11 +9,20 @@ interface BookProps {
   avatar: string;
   target: number;
   sales: number;
+  endAt: string;
 }
 
-const Book:React.FC<BookProps> = ({ title, author, description, image, avatar, target, sales }) => {
+const Book:React.FC<BookProps> = ({ title, author, description, image, avatar, target, sales, endAt }) => {
   const percentage = (sales / target) * 100;
   const targetWidth = percentage >= 100 ? 100 : percentage;
+
+  const today = new Date();
+  const endDate = endAt ? new Date(endAt) : new Date();
+  const difference = endDate.getTime() - today.getTime();
+  const daysLeft = Math.floor(difference / (1000 * 3600 * 24))
+
+  const message = sales >= target ? "Objectif Atteint" : `${daysLeft} days left`;
+  const messageClass = sales >= target ? 'objectif-atteint' : '';
 
   return (
     <div className="book-card">
@@ -29,13 +38,17 @@ const Book:React.FC<BookProps> = ({ title, author, description, image, avatar, t
       <p className="description">{description}</p>
       <div className="publication-target">
         <p>Publication target</p>
-        <div className="target">
-          <div className="target-line" style={{ width: `${targetWidth}%`}}></div>
-          {targetWidth.toFixed(0)} %
+        <div className="target-percentage">
+          <div className="target">
+            <div className="target-line" style={{ width: `${targetWidth}%`}}></div>
+          </div>
+          <p>{percentage.toFixed(0)} %</p>
         </div>
       </div>
-      <div>Objectif Atteint</div>
-      <button>Preorder</button>
+      <div className="book-card-footer">
+        <h5 className={messageClass}>{message}</h5>
+        <button className="preorder-btn">Preorder</button>
+      </div>
     </div>
   );
 }

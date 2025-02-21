@@ -63,14 +63,50 @@ hr {
 
 .target {
   position: relative;
-  width: 250px;
-  height: 10px;
-  background-color: #e0e0e0;
-  margin-top: 5px;
+  width: 85%;
+  height: 9px;
+  border-radius: 8px;
+  background-color: rgb(227, 227, 234);
+
 }
 
 .target-line {
   position: absolute;
   height: 100%;
-  background-color: #4caf50; /* Green color for progress */
+  background-color: rgb(37, 106, 237);
+  border-radius: 8px;
+}
+
+.target-percentage {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  gap: 5px;
+}
+
+.target-percentage p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.objectif-atteint {
+  color: rgb(115, 203, 81);
+}
+
+.book-card-footer {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.book-card-footer h5 {
+  margin: 0;
+}
+
+.preorder-btn {
+  width: 172px;
+  height: 42px;
 }
